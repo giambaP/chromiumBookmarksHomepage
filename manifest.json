@@ -8,8 +8,7 @@
                 "<all_urls>"
             ],
             "js": [
-                "lib/jquery-3.5.1.min.js",
-                "content.js"
+                "lib/jquery-3.5.1.min.js"
             ]
         }
     ],
@@ -20,6 +19,12 @@
         "newtab": "sources/homepage.html"
     },
     "permissions": [
-        "bookmarks"
-    ]
+        "bookmarks",
+        "contextMenus"
+    ],
+    "background": {
+        "scripts": [
+            "sources/extension_menu.js"
+        ]
+    }
 }
