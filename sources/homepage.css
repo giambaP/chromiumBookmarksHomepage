@@ -1,0 +1,66 @@
+html,
+body {
+  background-color: #424242;
+  color: white;
+  padding: 30px;
+}
+h1 {
+  color: white;
+}
+.foldersContainers {
+  width: 100%;
+  height: 100%;
+}
+.folder {
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-bottom: 2%;
+}
+.folderTitle {
+  float: left;
+  font-size: 30px;
+}
+.page {
+  position: relative;
+  float: left;
+  background-color: #f1f1f1;
+  border: 1px solid transparent;
+  min-width: 150px;
+  margin: 8px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.page {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page > span {
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+.page > a {
+  display: none;
+}
+
+.page:hover {
+  cursor: pointer;
+  background-color:#383434;
+  border: 1px solid white;
+  /* margin: 7px; */
+  z-index: 1000;
+  /* font-size: 20px; */
+  /* font-weight: bolder; */
+  box-shadow: 5px 5px black;
+  transform: scale(1.1) rotate(3deg);
+  transition-duration: 0.6s;
+}
+.page:hover > span {
+  color: white;
+}
