@@ -1,6 +1,32 @@
 html,
 body {
-  background-color: #424242;
+  background: -o-linear-gradient(
+    181deg,
+    #111232,
+    #b3290a,
+    #64652d,
+    #b3290a,
+    #111232
+  );
+  background: -o-linear-gradient(
+    181deg,
+    #111232,
+    #691907,
+    #64652d,
+    #691907,
+    #111232
+  );
+  background: linear-gradient(
+    269deg,
+    #111232,
+    #691907,
+    #64652d,
+    #691907,
+    #111232
+  );
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 20s cubic-bezier(0.97, -0.28, 0.2, 0.75) infinite;
   color: white;
   padding: 30px;
 }
@@ -33,6 +59,9 @@ h1 {
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
+  -webkit-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
 }
 .page {
   display: inline-block;
@@ -51,16 +80,38 @@ h1 {
 
 .page:hover {
   cursor: pointer;
-  background-color:#383434;
-  border: 1px solid white;
-  /* margin: 7px; */
+  background-color: #383434;
+  border: 1px solid #0f0000f5;
   z-index: 1000;
-  /* font-size: 20px; */
-  /* font-weight: bolder; */
+  -webkit-box-shadow: 5px 5px black;
   box-shadow: 5px 5px black;
+  -webkit-transform: scale(1.1) rotate(3deg);
+  -ms-transform: scale(1.1) rotate(3deg);
   transform: scale(1.1) rotate(3deg);
-  transition-duration: 0.6s;
 }
 .page:hover > span {
   color: white;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
