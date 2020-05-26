@@ -46,6 +46,7 @@ h1 {
 .folderTitle {
   float: left;
   font-size: 30px;
+  font-style: italic;
 }
 .page {
   position: relative;
