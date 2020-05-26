@@ -81,7 +81,7 @@ h1 {
 .page:hover {
   cursor: pointer;
   background-color: #383434;
-  border: 1px solid #0f0000f5;
+  border: 1px solid #f1f1f1;
   z-index: 1000;
   -webkit-box-shadow: 5px 5px black;
   box-shadow: 5px 5px black;
